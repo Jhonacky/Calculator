@@ -8,8 +8,8 @@ window.onload = () => {
         
         const cuotas = [];
         cuotas.push(amountMoney);
-        cuotas.push((amountMoney/3)*1.1)
-        cuotas.push((amountMoney/3)*1.3)
+        cuotas.push((amountMoney/2)*1.25)
+        cuotas.push((amountMoney/3)*1.4)
         let counter= 0;
         cuotas.forEach(c => {
             counter++

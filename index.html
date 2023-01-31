@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Calculadora de prestamos</title>
+</head>
+<body>
+    <div class="formbox">
+        <div class="formbox__form">
+            <div class="title">
+                <p>Calculadora de Prestamos</p>
+            </div>
+            <form action="" id="formulario">
+                <label for="inputMoney">Cantidad de dinero</label>
+                <input type="text" name="inputMoney" class="inputMoney" id="moneyAmount">
+                <label for="moneyType">Tipo de moneda</label>
+                <input list="money" id="moneyType">
+                <datalist id="money">
+                    <option value="Euros"></option>
+                    <option value="Dolares"></option>
+                    <option value="Pesos Argentinos"></option>
+                    <option value="Pesos Uruguayos"></option>
+                </datalist>
+                <input type="submit" value="Ver plan de pagos" class="button">
+            </form>
+            <div class="listaCuotas">
+                <label for="" class="cuotasTitle">Cuotas</label>
+                <input list="cuotas" id="inputCuotas">
+                <datalist id="cuotas">
+                    
+                </datalist>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+body{
+    background-color: #ccc;
+    width: 100%;
+    height: 100vh;
+}
+
+.formbox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50rem;
+    padding: 25px 0px;
+    margin: 6rem 0rem;
+}
+
+.formbox__form{
+    display:flex;
+    flex-direction: column;
+    height: 48rem;
+    width: 45rem;
+    background-color: rgb(89, 89, 119);
+    border: none;
+    border-radius: 16px;
+}
+
+.title{
+    width: 100%;
+    height: 6rem;
+    text-align: center;
+    padding-top:2rem;
+    margin-bottom: 4rem;
+    font-size:1.7rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title p{
+    display: inline-block;
+    background-color: #ccc;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 2.3rem;
+}
+
+form{
+    padding: 0px 10px;
+    height: 25rem;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+input[type="text"], input[list="paying"], input[list="money"]{
+    height: 5rem;
+    width: 40%;
+    margin-top:2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    padding-top:3rem;
+    font-size: 1.2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border:none;
+    border-radius: 2px;
+    background-color: #ccc;
+    text-align: center;
+
+}
+
+label{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    position:relative;
+    top:3.9rem;
+}
+
+
+input[list="paying"]{
+    position:relative;
+    left:10rem;
+}
+
+label[for="paying"]{
+    position:relative;
+    left: 4rem;
+}
+
+label[for="inputMoney"]{
+    top:2.7rem;
+    background-color: #ccc;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.inputMoney{
+    position: relative;
+    top: 2rem;
+}
+
+
+input[list="money"]{
+    cursor:pointer;
+    position: relative;
+    top: 5rem;
+}
+
+label[for="moneyType"]{
+    top: -10.4rem;
+    left: 22.3rem;
+    background-color: #ccc;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+
+.button{
+    width: 18rem;
+    height: 5rem;
+    position: relative;
+    top:6rem;
+    right:11rem;
+    font-size: 1.25rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+.button:hover{
+    cursor:pointer;
+    background-color: rgb(204, 200, 200);    
+}
+
+.listaCuotas{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.cuotasTitle{
+    top: 0;
+    padding: 10px 15px;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-bottom: 1.4rem;
+}
+
+input[list="cuotas"]{
+    padding: 20px 30px;
+    width: 30%;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+#cuotas option{
+    width: 100%;
+}

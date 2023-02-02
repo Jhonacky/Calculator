@@ -5,7 +5,7 @@ window.onload = () => {
         e.preventDefault();
         let amountMoney = document.getElementById('moneyAmount').value;
         let moneyType = document.getElementById('moneyType').value;
-        
+        listaCuotas.innerHTML = '';
         const cuotas = [];
         cuotas.push(amountMoney);
         cuotas.push((amountMoney/2)*1.25)
@@ -18,8 +18,9 @@ window.onload = () => {
     }
 
     const inputCuotas = document.getElementById('inputCuotas');
-    inputCuotas.addEventListener('click', () => {
+    inputCuotas.addEventListener('click', (e) => {
         inputCuotas.value = '';
+        return true;
     })
 
 }
